@@ -1,15 +1,17 @@
-key: 4fKW52q5ZGtqr693q+9+i5+04g0vbI4LHztAtSOEMX2DasKoWi+AlE1QFLj8Sm4s7pGVJuyHyYk5arLAo/Qx7OIkhRG+mqkIiNGF7ZkL+6HQamr5RUyWRLGXA8PioPhsHbV1xr6xe8ogV2/RzyhuteUgJ5/pxy+3UDxREJWFWXyjo31eq4i4U/zaNekxr8Y60kKXOtXVrwrcVaiuDX+o4FbAJSyCJ8CjW5b1kBHQN6RfbCaNf7T7WNKZ7atc9eUotXtKOh7X2lG29mtdbYuFrpTkP9yZnQvbWCK/6c8K6M3iWS3efOIqgqpWGkt0obvN7S9x1J/eQnjDu4CPABskDVhYDI/eXeo1nWI2zACfgosL4D9H/sMNgvOcA82FDp4+QTQVPzg/fdaQcCTzH0dcLITqPhIJ12dPEzDDlVSy+Jb6BPnubnRIbE64Ntppqro6
-metrics:
-  plugins:
-    - name: jvmjolokia
-      enabled: true
-      interval: 300
-      config:
-        ip: 127.0.0.1
+--- 
+key: QgDqX+IsdrZsv+YDNqzhSziYVEqyeA15uHt95yxjyK+r3A/vZm+8ly/iy9JyOlOUeF209nGRbqpqAnsJguPL2lm6RK6VaUpWi2m6XCR/WsCiQhW3ADoTWqJ3wrN4PuDn2dzZmRt6oPSOwMAi1E5ydw5q99F95mFYbRpHsCy/s5uCPLvqttoObE4+4XKo+hetHBpWFx/IdLMgACE5dPhpW1yvXv/Xqsu/drsAogP6/XTkmyZ5p2kvvatwwKRVMpJTyyxIwAHJk3YHLt/yME+/LJtGZUW8GF0b2ioQuN+LBKWsuEZoffnckIfEicBCBckno5vagmQ1IN921o0YeDskc3+1FkztVQ3lzZW8MytCrTiv1fozbBytfgUU8RTDJNc95UHb58ICRDn7MqRu3f3Qv4b+0jU1tnOVZdCKHJe3MbwPUseuzKFhh8wbbEQDV1E+
+metrics: 
+  plugins: 
+    - 
+      config: 
+        context: jolokia
+        deadLockMonitoringInterval: 300
+        ip: "127.0.0.1"
+        monitorDeadlocks: false
         password: admin
+        port: 8778
         protocol: http
         username: admin
-        port: 8778
-        context: jolokia
-        monitorDeadlocks: false
-        deadLockMonitoringInterval: 300
+      enabled: true
+      interval: 300
+      name: jvmjolokia
