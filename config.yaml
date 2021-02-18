@@ -3,7 +3,7 @@ key: QgDqX+IsdrZsv+YDNqzhSziYVEqyeA15uHt95yxjyK+r3A/vZm+8ly/iy9JyOlOUeF209nGRbqp
 metrics: 
   plugins: 
     - 
-      config: 
+      config:
         context: jolokia
         deadLockMonitoringInterval: 300
         ip: "127.0.0.1"
