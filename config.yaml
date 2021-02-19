@@ -5,7 +5,7 @@ metrics:
       interval: 300
       enabled: true
       config:
-        ip: 127.0.0.1
+        ip: 172.31.255.140
         password: admin
         protocol: http
         username: admin
