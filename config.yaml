@@ -2,8 +2,9 @@ key: QgDqX+IsdrZsv+YDNqzhSziYVEqyeA15uHt95yxjyK+r3A/vZm+8ly/iy9JyOlOUeF209nGRbqp
 metrics:
   plugins:
     - name: jvmjolokia
-      enabled: true
+
       interval: 300
+      enabled: true
       config:
         ip: 127.0.0.1
         password: admin
